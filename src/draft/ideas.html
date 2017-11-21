@@ -1,0 +1,22 @@
+<h1 id="terminology-breakers">Terminology Breakers</h1>
+<p>The kind of articles where we demystify the mathematical symbolism.</p>
+<p>Consider the expression:</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="dv">2</span> <span class="op">+</span> <span class="dv">4</span><span class="op">;</span></code></pre></div>
+<p>Abstracting the above expression by introducing a bound variable.</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="co">// abstracting the expression 2 + 4</span>
+<span class="kw">function</span> <span class="at">addFour</span>(x) <span class="op">{</span>
+    <span class="cf">return</span> x <span class="op">+</span> <span class="dv">4</span><span class="op">;</span>
+<span class="op">}</span></code></pre></div>
+<p>In books, you'll see this process being represented as:</p>
+<p><br /><span class="math display">(<em>x</em>)<em>a</em><em>d</em><em>d</em><em>F</em><em>o</em><em>u</em><em>r</em> = <em>x</em> + 4</span><br /></p>
+<p>OR</p>
+<p><br /><span class="math display"><em>λ</em><em>x</em>.<em>x</em> + 4</span><br /></p>
+<p><br /><span class="math display"><em>a</em><em>d</em><em>d</em><em>F</em><em>o</em><em>u</em><em>r</em>(<em>x</em>)=<em>x</em> + 4</span><br /></p>
+<p>This is called &quot;abstraction&quot; which just means that you are generalizing the expression.</p>
+<p>Notice you can also, abstract the second variable.</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="kw">function</span> <span class="at">sum</span>(x<span class="op">,</span> y) <span class="op">{</span>
+    <span class="cf">return</span> x <span class="op">+</span> y<span class="op">;</span>
+<span class="op">}</span></code></pre></div>
+<p><br /><span class="math display"><em>λ</em><em>x</em>.<em>f</em> = (<em>x</em>)<em>f</em> <em>a</em><em>b</em><em>s</em><em>t</em><em>r</em><em>a</em><em>c</em><em>t</em><em>i</em><em>o</em><em>n</em></span><br /></p>
+<p><br /><span class="math display"><em>f</em>(<em>x</em>)=(<em>λ</em><em>y</em>.<em>f</em>)<em>x</em> <em>a</em><em>p</em><em>p</em><em>l</em><em>i</em><em>c</em><em>a</em><em>t</em><em>i</em><em>o</em><em>n</em></span><br /></p>
+<p>Demystify it using JavaScript: the world most (mis)understood language. And Don't use esoteric languages like Haskell.</p>
